@@ -36,6 +36,7 @@ class _ViewState extends State<View> {
                   const SizedBox(height: 10.0)
                 ],
                 RaisedButton(
+                    key: Key('button'),
                     child: Text(LABEL_BUTTON),
                     onPressed: () {
                       if (_controller.text.isEmpty) return;

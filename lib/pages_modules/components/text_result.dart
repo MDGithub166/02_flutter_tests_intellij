@@ -10,6 +10,7 @@ class TextResult extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       _reversed,
+      key: Key("response"),
       style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 18.0,
