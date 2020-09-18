@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/SERVIDOR/Projects/flutter_reversi-master/lib/pages_modules/components/text_field.dart';
-import 'file:///C:/Users/SERVIDOR/Projects/flutter_reversi-master/lib/pages_modules/components/text_result.dart';
-import 'file:///C:/Users/SERVIDOR/Projects/flutter_reversi-master/lib/pages_modules/service.dart';
+import 'package:flutter_reversi/pages_modules/service/service.dart';
 
 import '../core/constants.dart';
+import 'components/text_field.dart';
+import 'components/text_result.dart';
 
 class View extends StatefulWidget {
   @override

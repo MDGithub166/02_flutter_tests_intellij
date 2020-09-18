@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_reversi/app_driver.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+// WIDGET TEST: is an UNIT-TEST-WIDGET, meaning it is a Unit Test for Widgets
 void main() {
   testWidgets('Widget Testing', (WidgetTester tester) async {
     //
-    // 1) Select the Widget/View to test
+    // 1) Select the WIDGET to test
     await tester.pumpWidget(AppDriver());
 
     // 2) find the ITEM to test + CONFIRMA
@@ -14,20 +15,18 @@ void main() {
 
     // 3) entra o TEXTO p/ TEST + CONFIRMA
     await tester
-        .enterText(_textField, 'Hello')
-        .then((value) => expect(find.text('Hello'), findsOneWidget));
+        .enterText(_textField, 'Ab')
+        .then((value) => expect(find.text('Ab'), findsOneWidget));
 
-    // 4) ACIONA BUTTON REVERSER
+    // 4) ACIONA BUTTON
     // 4.a) Find BUTTON(via label) + CONFIRMA
     var button = find.byKey(Key('button'));
     expect(button, findsOneWidget);
 
-    await tester
-        // 4.b) TAP BUTTON
+    // 4.b) Tap Button + ReBuild 1 frame(Pump) + Check Result
+    tester
         .tap(button)
-        // 4.c) ESPERA(1 frame)
         .then((value) => tester.pump())
-        // 4.d) Check result
-        .then((value) => expect(find.text('olleH'), findsOneWidget));
+        .then((value) => expect(find.text('bA'), findsOneWidget));
   });
 }
