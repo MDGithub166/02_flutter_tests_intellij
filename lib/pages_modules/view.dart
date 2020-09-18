@@ -13,6 +13,7 @@ class View extends StatefulWidget {
 class _ViewState extends State<View> {
   TextEditingController _controller;
   String _reversed;
+  Service _service = Service();
 
   @override
   void initState() {
@@ -22,6 +23,7 @@ class _ViewState extends State<View> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(title: Text(APPBAR_TITLE)),
       body: SingleChildScrollView(
@@ -41,7 +43,7 @@ class _ViewState extends State<View> {
                     onPressed: () {
                       if (_controller.text.isEmpty) return;
                       setState(() {
-                        _reversed = reverser(_controller.text);
+                        _reversed = _service.reverser(_controller.text);
                       });
                     })
               ])),

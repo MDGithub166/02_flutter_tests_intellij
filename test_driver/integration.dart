@@ -1,7 +1,9 @@
-import 'package:flutter_driver/driver_extension.dart';
 import 'package:flutter_reversi/main.dart' as mainApp;
 
-//PUBSPEC.YML - DEPENDENCIES FORMAT
+//FLUTTER-DRIVER-EXTENSION IMPORT:
+import 'package:flutter_driver/driver_extension.dart';
+
+//PUBSPEC.YML - DEPENDENCIES INSERTION/FORMAT
 // dev_dependencies:
 //  flutter_driver:
 //  sdk: flutter

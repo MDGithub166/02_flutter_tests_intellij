@@ -1,4 +1,7 @@
+class Service {
+  Service();
 
-String reverser(String initial) {
-  return initial.split('').reversed.join();
+  String reverser(String initial) {
+    return initial.split('').reversed.join();
+  }
 }
