@@ -2,12 +2,13 @@ import 'package:flutter_reversi/pages_modules/service/i_service.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 
+
 // 1) Creating the Mock Class
 class MockService extends Mock implements IService {}
 
 void main() {
   // 2) Create the Mock Instance
-  MockService _mockService;
+  IService _mockService;
 
   // 2.a) Instanciating
   setUp(() {
@@ -43,6 +44,5 @@ void main() {
       String matcher = "test3-ok";
       expect(actual, matcher);
     });
-
   });
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_reversi/app_driver.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-// WIDGET TEST: is an UNIT-TEST-WIDGET, meaning it is a Unit Test for Widgets
+// WIDGET TEST: it is an "Unit Test for Specific Widgets"
 void main() {
   testWidgets('Widget Testing', (WidgetTester tester) async {
     //
@@ -19,7 +19,7 @@ void main() {
         .then((value) => expect(find.text('Ab'), findsOneWidget));
 
     // 4) ACIONA BUTTON
-    // 4.a) Find BUTTON(via label) + CONFIRMA
+    // 4.a) Find BUTTON(via KEY) + CONFIRMA
     var button = find.byKey(Key('button'));
     expect(button, findsOneWidget);
 
