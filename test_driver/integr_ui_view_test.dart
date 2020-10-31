@@ -7,7 +7,7 @@ void main() {
   //
   //1) GROUP-TEST
   group('Group CI-CD-01: Integration UI/VIEW Test - View.Dart', () {
-    //2) FLUTTER-DRIVER: Instanciate the test-driver
+    //2) FLUTTER-DRIVER INSTANCE
     FlutterDriver driver;
 
     //2.A) CONNECT FLUTTER-DRIVER
@@ -20,7 +20,7 @@ void main() {
       if (driver != null) driver.close();
     });
 
-    //3 FIND ELEMENTS (PRIORITIZE 'VALUE_KEY')
+    //3 FIND ELEMENTS (USE 'VALUE_KEY')
     var _textField = find.byValueKey("input");
     var _button = find.byValueKey("button");
     var _resultLabel = find.byValueKey("response");
@@ -28,7 +28,7 @@ void main() {
     test('Reversing the string', () async {
       await driver.clearTimeline();
 
-      //4) FULLFILL FIELDS + PAUSE TO DISPLAY
+      //4) FULLFILL FIELDS + PAUSE TO DISPLAY THE CONTENT
       await driver
           .tap(_textField)
           .then((value) => Future.delayed(Duration(seconds: 2)))
@@ -38,7 +38,7 @@ void main() {
       //5) NO-DISPLAY YET
       await driver.waitForAbsent(_resultLabel);
 
-      //6) TAP (_resultLabeL is FINALLY 'Displayed')
+      //6) TAP-ACTION + RESULT
       await driver
           .tap(_button)
           .then((value) => Future.delayed(Duration(seconds: 2)))
@@ -49,6 +49,8 @@ void main() {
 
       //8) FINAL CHECKING
       assert(_resultLabel != null);
+
+      await driver.clearTimeline();
     });
   });
 }
