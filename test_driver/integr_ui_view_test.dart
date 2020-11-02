@@ -1,12 +1,11 @@
-import 'package:test/test.dart';
-
-//FLUTTER-DRIVER IMPORT:
 import 'package:flutter_driver/flutter_driver.dart';
+import 'package:test/test.dart';
 
 void main() {
   //
   //1) GROUP-TEST
-  group('Group CI-CD-01: Integration UI/VIEW Test - View.Dart', () {
+  group('Group CI-CD-01: Integration UI/VIEW Test - View --> ', () {
+    //
     //2) FLUTTER-DRIVER INSTANCE
     FlutterDriver driver;
 
@@ -18,6 +17,7 @@ void main() {
     //2.B) CLOSE FLUTTER-DRIVER
     tearDownAll(() {
       if (driver != null) driver.close();
+      print("Test well done!");
     });
 
     //3 FIND ELEMENTS (USE 'VALUE_KEY')
@@ -25,7 +25,7 @@ void main() {
     var _button = find.byValueKey("button");
     var _resultLabel = find.byValueKey("response");
 
-    test('Reversing the string', () async {
+    test('Test 01 - Reversing the string', () async {
       await driver.clearTimeline();
 
       //4) FULLFILL FIELDS + PAUSE TO DISPLAY THE CONTENT
@@ -49,6 +49,7 @@ void main() {
 
       //8) FINAL CHECKING
       assert(_resultLabel != null);
+      expect(await driver.getText(_resultLabel), "222olleH");
 
       await driver.clearTimeline();
     });
