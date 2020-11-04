@@ -26,7 +26,7 @@ class _ViewState extends State<View> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(title: Text(APPBAR_TITLE)),
+      appBar: AppBar(title: APPBAR_TITLE),
       body: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -39,8 +39,8 @@ class _ViewState extends State<View> {
                   const SizedBox(height: 10.0)
                 ],
                 RaisedButton(
-                    key: Key(V003),
-                    child: Text(LABEL_BUTTON),
+                    key: Key(K03),
+                    child: LABEL_BUTTON,
                     onPressed: () {
                       if (_controller.text.isEmpty) return;
                       setState(() {

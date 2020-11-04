@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_reversi/app_driver.dart';
+import 'package:flutter_reversi/core/app_widget_keys.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 // WIDGET TEST: it is an "Unit Test for Specific Widgets"
@@ -10,7 +11,7 @@ void main() {
     await tester.pumpWidget(AppDriver());
 
     // 2) find the ITEM to test + CONFIRMA
-    var _textField = find.byKey(Key("input"));
+    var _textField = find.byKey(Key(K01));
     expect(_textField, findsOneWidget);
 
     // 3) entra o TEXTO p/ TEST + CONFIRMA
@@ -20,7 +21,7 @@ void main() {
 
     // 4) ACIONA BUTTON
     // 4.a) Find BUTTON(via KEY) + CONFIRMA
-    var button = find.byKey(Key('button'));
+    var button = find.byKey(Key(K03));
     expect(button, findsOneWidget);
 
     // 4.b) Tap Button + ReBuild 1 frame(Pump) + Check Result

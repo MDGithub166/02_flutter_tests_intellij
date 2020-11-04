@@ -33,6 +33,6 @@ void main() {
 }
 
 // D) RUNNING THE TEST:
-// D.1) CLI: flutter drive --target=test_driver/integr_ui_view.dart
+// D.1) CLI: flutter drive --target=test_driver/app_main.dart
 // D.2) IntelliJ, check: https://pvba04.medium.com/flutter-integration-tests-in-intellij-idea-16736df35bc7
 
