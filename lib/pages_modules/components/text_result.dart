@@ -11,7 +11,7 @@ class TextResult extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       _reversed,
-      key: Key(V002),
+      key: Key(K02),
       style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 18.0,
