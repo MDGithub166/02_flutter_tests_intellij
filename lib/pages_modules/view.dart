@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_reversi/core/app_widget_keys.dart';
 import 'package:flutter_reversi/pages_modules/service/service.dart';
 
-import '../core/constants.dart';
+import '../core/app_texts.dart';
 import 'components/text_field.dart';
 import 'components/text_result.dart';
 
@@ -38,7 +39,7 @@ class _ViewState extends State<View> {
                   const SizedBox(height: 10.0)
                 ],
                 RaisedButton(
-                    key: Key('button'),
+                    key: Key(V003),
                     child: Text(LABEL_BUTTON),
                     onPressed: () {
                       if (_controller.text.isEmpty) return;

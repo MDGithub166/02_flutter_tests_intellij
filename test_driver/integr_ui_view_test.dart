@@ -1,4 +1,5 @@
 import 'package:flutter_driver/flutter_driver.dart';
+import 'package:flutter_reversi/core/app_widget_keys.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -21,9 +22,9 @@ void main() {
     });
 
     //3 FIND ELEMENTS (USE 'VALUE_KEY')
-    var _textField = find.byValueKey("input");
-    var _button = find.byValueKey("button");
-    var _resultLabel = find.byValueKey("response");
+    var _textField = find.byValueKey(V001);
+    var _resultLabel = find.byValueKey(V002);
+    var _button = find.byValueKey(V003);
 
     test('Test 01 - Reversing the string', () async {
       await driver.clearTimeline();

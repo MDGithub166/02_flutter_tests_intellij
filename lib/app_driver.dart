@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'core/constants.dart';
+import 'core/app_texts.dart';
 import 'pages_modules/view.dart';
 
 class AppDriver extends StatelessWidget {
