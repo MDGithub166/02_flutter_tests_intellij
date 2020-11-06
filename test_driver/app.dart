@@ -18,7 +18,7 @@
 import 'package:flutter_driver/driver_extension.dart';
 
 // A.2) FLUTTER-REVERSI ABREVIATION(**MODULE PROJECT NAME**)
-import 'package:flutter_reversi/main.dart' as mainApp;
+import 'package:flutter_reversi/main.dart' as app;
 
 // B) DEPENDENCIES NEEDED - PUBSPEC.JSON:
 //  dev_dependencies:
@@ -29,10 +29,10 @@ import 'package:flutter_reversi/main.dart' as mainApp;
 // C) MAIN-FILE TO RUN THE TEST
 void main() {
   enableFlutterDriverExtension();
-  mainApp.main();
+  app.main();
 }
 
 // D) RUNNING THE TEST:
-// D.1) CLI: flutter drive --target=test_driver/app_main.dart
+// D.1) CLI: flutter drive --target=test_driver/app.dart
 // D.2) IntelliJ, check: https://pvba04.medium.com/flutter-integration-tests-in-intellij-idea-16736df35bc7
 

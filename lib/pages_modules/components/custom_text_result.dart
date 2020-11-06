@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_reversi/core/app_widget_keys.dart';
 
-class TextResult extends StatelessWidget {
+class CustomTextResult extends StatelessWidget {
 
   final String _reversed;
 
-  TextResult(this._reversed);
+  CustomTextResult(this._reversed);
 
   @override
   Widget build(BuildContext context) {

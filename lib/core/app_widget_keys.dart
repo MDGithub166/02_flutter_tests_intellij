@@ -1,4 +1,4 @@
-// CAUSA GERADORA DE POSSIVEL ERRO:
+// ERROR REASON:
 // import 'package:flutter/material.dart';
 // const K01 = Key('page_module_components_text_field_key');
 
@@ -7,7 +7,7 @@ const K02 = 'page_module_components_text_result_key';
 const K03 = 'view_raised_button_key';
 
 /*
-CAUSA GERADORA DE POSSIVEL ERRO:
+ERROR SOURCES:
 *********************************************
 *********************************************
 *          POSSIBLE ERROR - 'dart:ui'       *
@@ -19,18 +19,18 @@ CAUSA GERADORA DE POSSIVEL ERRO:
 * "PROVIDE"(VIA IMPORT) ELEMENTS FOR THESE  *
 *          FLUTTER-DRIVER-TESTS             *
 * *******************************************
-* a) package:flutter/FOUNDATION - ERRO:                     *
+* a) package:flutter/FOUNDATION - ERRO:     *
 * void addListener(VoidCallback listener)   *
 *                                           *
-* b) package:flutter/CUPPERTINO - ERRO:                     *
+* b) package:flutter/CUPPERTINO - ERRO:     *
 * import 'dart:ui' as ui show BoxHeightStyle, BoxWidthStyle;
 *                                           *
-* c) package:flutter/MATERIAL - ERRO:                       *
+* c) package:flutter/MATERIAL - ERRO:       *
 * import 'dart:ui' show lerpDouble;         *
 *                                           *
-* d) package:flutter/WIDGETS - ERRO:                        *
+* d) package:flutter/WIDGETS - ERRO:        *
 * export 'dart:ui' show hashValues, hashList;
 *                                           *
-* e) package:flutter/ETC...                 *                         *
+* e) package:flutter/ETC...                 *
 * *******************************************
  */

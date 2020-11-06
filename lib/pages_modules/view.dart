@@ -3,8 +3,8 @@ import 'package:flutter_reversi/core/app_widget_keys.dart';
 import 'package:flutter_reversi/pages_modules/service/service.dart';
 
 import '../core/app_texts.dart';
-import 'components/text_field.dart';
-import 'components/text_result.dart';
+import 'components/custom_text_field.dart';
+import 'components/custom_text_result.dart';
 
 class View extends StatefulWidget {
   @override
@@ -35,7 +35,7 @@ class _ViewState extends State<View> {
                 CustomTextField(_controller),
                 const SizedBox(height: 10.0),
                 if (_reversed != null) ...[
-                  TextResult(_reversed),
+                  CustomTextResult(_reversed),
                   const SizedBox(height: 10.0)
                 ],
                 RaisedButton(

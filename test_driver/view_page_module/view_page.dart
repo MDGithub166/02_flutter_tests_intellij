@@ -1,7 +1,34 @@
 import 'package:flutter_driver/flutter_driver.dart';
 import 'package:flutter_reversi/core/app_widget_keys.dart';
 import 'package:test/test.dart';
-
+/*
+POSSIBLE ERROR SOURCE:
+*********************************************
+*********************************************
+*          POSSIBLE ERROR - 'dart:ui'       *
+* *******************************************
+*             FLUTTER LIBRARIES             *
+*              ARE NOT ALLOWED              *
+*       IN ANY FLUTTER-DRIVER-TESTS!!!      *
+*         "OR" IN ANY CLASSES THAT          *
+* "PROVIDE"(VIA IMPORT) ELEMENTS FOR THESE  *
+*          FLUTTER-DRIVER-TESTS             *
+* *******************************************
+* a) package:flutter/FOUNDATION - ERRO:     *
+* void addListener(VoidCallback listener)   *
+*                                           *
+* b) package:flutter/CUPPERTINO - ERRO:     *
+* import 'dart:ui' as ui show BoxHeightStyle, BoxWidthStyle;
+*                                           *
+* c) package:flutter/MATERIAL - ERRO:       *
+* import 'dart:ui' show lerpDouble;         *
+*                                           *
+* d) package:flutter/WIDGETS - ERRO:        *
+* export 'dart:ui' show hashValues, hashList;
+*                                           *
+* e) package:flutter/ETC...                 *
+* *******************************************
+ */
 class ViewPageTest {
   static void integrationTests() {
     var delayTest = 1;

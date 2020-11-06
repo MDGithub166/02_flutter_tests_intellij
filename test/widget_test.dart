@@ -10,7 +10,7 @@ void main() {
     // 1) Select the WIDGET to test
     await tester.pumpWidget(AppDriver());
 
-    // 2) find the ITEM to test + CONFIRMA
+    // 2) find the ITEM to test + confirm this finding
     var _textField = find.byKey(Key(K01));
     expect(_textField, findsOneWidget);
 
