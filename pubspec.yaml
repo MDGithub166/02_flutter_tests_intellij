@@ -9,6 +9,7 @@ dependencies:
   mockito:
   flutter:
     sdk: flutter
+  flushbar: ^1.10.4
 
 dev_dependencies:
   flutter_driver:

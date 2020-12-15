@@ -5,6 +5,7 @@
 const K01 = 'page_module_components_text_field_key';
 const K02 = 'page_module_components_text_result_key';
 const K03 = 'view_raised_button_key';
+const K04 = 'get_snack_bar_key';
 
 /*
 ERROR SOURCES:

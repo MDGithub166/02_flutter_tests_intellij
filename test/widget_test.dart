@@ -7,6 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 // void main() {
 class WidgetIntegrationTest {
   static void widgetIntegrationTests() {
+
     testWidgets('Widget Testing', (WidgetTester tester) async {
       //
       // 1) Select the WIDGET to test
